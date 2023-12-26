@@ -295,7 +295,7 @@ In TaskIt we count with two kind of worker pools:
 
 #### TKTWorkerPool
 
-Internally, all runners inside a TKTWorkerPool pool have a task queue. This pool counts with a worker that is in charge of scheduling tasks into one of the available workers, taking in account the work load of each worper. 
+Internally, all runners inside a TKTWorkerPool pool have a task queue. This pool counts with a worker that is in charge of scheduling tasks into one of the available workers, taking in account the work load of each worker. 
 
 Different applications may have different concurrency needs, thus, TaskIt worker pools do not provide a default amount of workers. Before using a pool, we need to specify the maximum number of workers in the pool using the `poolMaxSize:` message. A worker pool will create new workers on demand. 
 ```smalltalk
